@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": ".month.-.YYYY.-.#",
+ "creation": "2026-07-02 15:00:20.295455",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_qptp",
+  "month",
+  "income",
+  "column_break_trwn",
+  "amended_from",
+  "date",
+  "type",
+  "approved",
+  "section_break_rwlb",
+  "tracker",
+  "section_break_hzaf",
+  "column_break_zsqo",
+  "saving",
+  "column_break_lghx",
+  "balance",
+  "column_break_nktj",
+  "amount_spent"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_qptp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+   "read_only_depends_on": "eval:!doc.__islocal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "income",
+   "fieldtype": "Currency",
+   "label": "Income",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_trwn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nAmount\nPercent",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Personal Expense Tracker",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_rwlb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tracker",
+   "fieldtype": "Table",
+   "label": "Tracker",
+   "options": "Expense Tracker"
+  },
+  {
+   "fieldname": "section_break_hzaf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_zsqo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lghx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "saving",
+   "fieldtype": "Currency",
+   "label": "Saving",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nktj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount_spent",
+   "fieldtype": "Currency",
+   "label": "Amount Spent",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Personal Expense Tracker",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "approved",
+   "fieldtype": "Check",
+   "label": "Approved",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Currency",
+   "label": "Balance",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-04 13:10:28.971356",
+ "modified_by": "Administrator",
+ "module": "zen",
+ "name": "Personal Expense Tracker",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

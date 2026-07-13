@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-02 14:59:46.749872",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "expense_type",
+  "allocated_budget",
+  "allocated_percent",
+  "column_break_vxrs",
+  "utilized_budget",
+  "balance"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "expense_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Expense Type",
+   "link_filters": "[\r\n  [\"Personal Expense Type\", \"type\", \"=\", \"eval:parent.type\"]\r\n]",
+   "options": "Personal Expense Type"
+  },
+  {
+   "columns": 2,
+   "depends_on": "eval:parent.type == \"Amount\";",
+   "fetch_from": "expense_type.allocated_budget",
+   "fieldname": "allocated_budget",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Allocated Amount",
+   "read_only": 1,
+   "read_only_depends_on": "eval:parent.type == \"Amount\";"
+  },
+  {
+   "columns": 2,
+   "depends_on": "eval:parent.type == \"Percent\";",
+   "fetch_from": "expense_type.allocated_percent",
+   "fetch_if_empty": 1,
+   "fieldname": "allocated_percent",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Allocated Percent",
+   "read_only_depends_on": "eval:parent.type != \"Percent\";"
+  },
+  {
+   "fieldname": "column_break_vxrs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "utilized_budget",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Utilized Budget"
+  },
+  {
+   "columns": 2,
+   "fieldname": "balance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Balance",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-07-03 17:16:00.415774",
+ "modified_by": "Administrator",
+ "module": "zen",
+ "name": "Expense Tracker",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

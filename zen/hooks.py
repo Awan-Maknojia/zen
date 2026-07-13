@@ -166,6 +166,14 @@ app_license = "mit"
 # 	],
 # }
 
+scheduler_events = {
+    "cron": {
+        "0 0 1 * *": [
+            "zen.zen.doctype.personal_expense_tracker.personal_expense_tracker.set_month_button"
+        ]
+    }
+}
+
 # Testing
 # -------
 
@@ -236,7 +244,7 @@ app_license = "mit"
 # ]
 
 # Automatically update python controller files with type annotations for this app.
-# export_python_type_annotations = True
+export_python_type_annotations = True
 
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs

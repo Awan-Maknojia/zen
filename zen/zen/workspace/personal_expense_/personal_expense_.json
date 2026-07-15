@@ -1,0 +1,60 @@
+{
+ "charts": [
+  {
+   "chart_name": "Saving Chart",
+   "label": "Saving"
+  },
+  {
+   "chart_name": "Expense Chart",
+   "label": "Expense "
+  }
+ ],
+ "content": "[{\"id\":\"p5xDCrPUic\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Amount Spent (This Month)\",\"col\":4}},{\"id\":\"6midCzns3Z\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Balance (This Month)\",\"col\":4}},{\"id\":\"wujlLpKFiF\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Saving (This Month)\",\"col\":4}},{\"id\":\"QLY_y2gZxj\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Expense \",\"col\":6}},{\"id\":\"SJTttqyRKE\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Saving\",\"col\":6}},{\"id\":\"OS9GlXeden\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\" Expense Type\",\"col\":3}}]",
+ "creation": "2026-07-15 16:34:44.354389",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "money-coins-1",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Personal Expense ",
+ "links": [],
+ "modified": "2026-07-15 17:16:39.267188",
+ "modified_by": "Administrator",
+ "module": "zen",
+ "name": "Personal Expense ",
+ "number_cards": [
+  {
+   "label": "Balance (This Month)",
+   "number_card_name": "Balance"
+  },
+  {
+   "label": "Saving (This Month)",
+   "number_card_name": "Saving"
+  },
+  {
+   "label": "Amount Spent (This Month)",
+   "number_card_name": "Amount Spent"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": " Expense Type",
+   "link_to": "Personal Expense Type",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Personal Expense "
+}

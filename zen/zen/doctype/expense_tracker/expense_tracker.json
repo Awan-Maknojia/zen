@@ -43,6 +43,7 @@
    "fieldtype": "Percent",
    "in_list_view": 1,
    "label": "Allocated Percent",
+   "read_only": 1,
    "read_only_depends_on": "eval:parent.type != \"Percent\";"
   },
   {
@@ -69,7 +70,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-07-03 17:16:00.415774",
+ "modified": "2026-07-16 10:00:35.763610",
  "modified_by": "Administrator",
  "module": "zen",
  "name": "Expense Tracker",
